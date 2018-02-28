@@ -34,7 +34,7 @@ It is a kinesis firehose with S3 as end point. It will also transform JSON input
 	lambda function: ./lambda_functions/data-stream-wiki-jsontocsv.zip
 	
 ## 4. Data Lake Storage
-We are using S3 a data lake storage.
+We are using S3 as data lake storage.
 
 ## 5. Metadata Storage
 Glue is the metadata storage for the data lake. Using glue crawler, we will create an external table pointing to the S3 location where firehose storing data (it needs manual edit to fix column names). 
