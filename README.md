@@ -6,8 +6,8 @@
 	B. Offline analysis of streamed data
 	C. Serverless, as much as possible
 
-![alt text](https://github.com/obaidcuet/streaming_data_pipeline/images/streaming_data_pipeline.png "Streaming Data Pipeline on AWS")
-	
+![Alt text](images/streaming_data_pipeline.png?raw=true "Streaming Data Pipeline on AWS")
+
 ## 1. Streaming Data Source
 
 We are using wiki change streaming as data source. Details can be found in the below links: 
