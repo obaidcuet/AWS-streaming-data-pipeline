@@ -1,0 +1,25 @@
+-- create index name wiki
+PUT wiki
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 5,
+            "number_of_replicas" : 0
+        }
+    }
+}
+
+
+-- create doc type name "change" along with mappings under index "wiki"
+POST wiki/_mapping/change
+{
+    "change" : {
+        "properties" : {
+            "id" : { "type" : "text", "store" : true },
+            "type" : { "type": "keyword"},
+            "wiki" : { "type": "keyword"},
+            "change_datetime" : {"type" : "date", "format" : "yyyy-MM-dd HH:mm:ss", "store" : true},
+            "change_timestamp" : { "type" : "long", "store" : true }
+        }
+    }
+}

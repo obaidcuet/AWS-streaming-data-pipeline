@@ -1,0 +1,12 @@
+Name						wikiedits
+State						Ready
+Schedule					At 01:00 AMPaused
+Database					wikidb
+Service role				service-role/AWSGlueServiceRole-wikiedits
+Data store					S3
+Include path				s3://workarea-us-east-1/data-stream/wikiedits/tbl_wikiedits/
+Exclude patterns			s3://workarea-us-east-1/data-stream/wikiedits/processing-failed
+
+Configuration options:
+Schema updates in the data store	Ignore the change and don't update the table in the data catalog.
+Object deletion in the data store	Mark the table as deprecated in the data catalog.
